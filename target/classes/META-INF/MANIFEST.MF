@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1433497943392
+Build-Jdk: 1.7.0_71
+Built-By: mike
+Bundle-ManifestVersion: 2
+Bundle-Name: CSI Use-Case: Simple Websphere MQ Router Example version 3
+Bundle-SymbolicName: com.fusesource.examples.camel-mq-osgi
+Bundle-Version: 1.1.0
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Export-Package: com.fusesource.camel;version="1.1.0";uses:="org.apache.c
+ amel,org.apache.camel.spring,org.springframework.beans.factory"
+Import-Package: com.ibm.mq.jms,org.apache.camel,org.apache.camel.compone
+ nt.jms;version="[2.12,3)",org.apache.camel.model;version="[2.12,3)",org
+ .apache.camel.spring;version="[2.12,3)",org.slf4j;version="[1.6,2)",org
+ .springframework.beans.factory
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Tool: Bnd-2.4.1.201501161923
