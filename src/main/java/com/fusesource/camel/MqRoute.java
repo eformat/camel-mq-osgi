@@ -33,11 +33,9 @@ DisposableBean {
 			throw new BeanInitializationException("You must set a value for outgoingQueue");
 		}
 		logger.debug("Setting sourceUri to " + incomingQueue);
-
 		logger.debug("Setting outgoingUri to " + outgoingQueue);
 		
 		sourceUri = "wmq:queue:" + incomingQueue;
-
 		targetUri = "wmq:queue:" + outgoingQueue;
 	}
 	

@@ -18,8 +18,7 @@ public class MyTransform implements Processor, InitializingBean {
 	public void process(Exchange exchange) throws Exception {
 		logger.debug("Entered Transform.");
 
-		try {
-			
+		try {			
 			// Transformation
 			logger.debug("got JMSMessageID = " + exchange.getIn().getHeader("JMSMessageID"));
 			exchange.setOut(exchange.getIn());
